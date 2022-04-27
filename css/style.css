@@ -1,0 +1,14 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.testimonial{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(15.625rem,1fr));
+    grid-template-rows: repeat(2,1fr);
+}
+.testimonial div img{
+    display: flex;
+    border-radius: 50%;
+} 
+
