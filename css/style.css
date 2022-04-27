@@ -11,4 +11,10 @@
     display: flex;
     border-radius: 50%;
 } 
-
+.testimonial .test-daniel{
+    background: url(../images/bg-pattern-quotation.svg),
+    rgb(117, 65, 200);
+    background-repeat: no-repeat;
+    background-position:top right;
+    margin-inline-end: 4rem;
+}
