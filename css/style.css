@@ -3,9 +3,12 @@
     margin: 0;
 }
 .testimonial{
+    width:80%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(15.625rem,1fr));
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,minmax(16rem,max-content));
+    grid-gap: 2rem;
+    justify-content: center;
 }
 .testimonial div img{
     display: flex;
@@ -16,5 +19,24 @@
     rgb(117, 65, 200);
     background-repeat: no-repeat;
     background-position:top right;
-    margin-inline-end: 4rem;
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.testimonial .test-jonathan{
+    background-color:  rgb(72, 85, 106);
+    grid-column-start: 3;
+}
+.testimonial .test-kira ,
+.testimonial .test-jeanette{
+    background-color: rgb(255, 255, 255);
+}
+.testimonial .test-kira{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.testimonial .test-patrick{
+    background-color:  rgb(25, 33, 46);
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
