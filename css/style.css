@@ -2,19 +2,44 @@
     padding:0;
     margin: 0;
 }
-.testimonial{
+body{
+    background-color: aqua;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.feedbacks{
     width:80%;
     display: grid;
     grid-template-columns: repeat(4,auto);
     grid-template-rows: repeat(2,minmax(16rem,max-content));
-    grid-gap: 2rem;
-    justify-content: center;
+    grid-gap: 1rem;
+    margin: auto;
 }
-.testimonial div img{
+.feedbacks .feedback{
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    border-radius: 5px;
+}
+.feedbacks .info-feedback{
     display: flex;
+    flex-wrap: wrap;
+}
+.feedbacks .daniel,
+.feedbacks .jonathan,
+.feedbacks .patrick{
+    color: white;
+}
+.feedbacks .feedback .info-feedback,
+.feedbacks .feedback .info-feedback{
+    margin-block-end: 1rem;
+}
+.feedbacks .sub-heading ,
+.feedbacks .grad{
+    opacity: 50%;
+}
+.feedbacks .info-feedback img{
     border-radius: 50%;
 } 
-.testimonial .test-daniel{
+.feedbacks .daniel{
     background: url(../images/bg-pattern-quotation.svg),
     rgb(117, 65, 200);
     background-repeat: no-repeat;
@@ -22,20 +47,20 @@
     grid-column-start:1;
     grid-column-end: 3;
 }
-.testimonial .test-jonathan{
+.feedbacks .jonathan{
     background-color:  rgb(72, 85, 106);
     grid-column-start: 3;
 }
-.testimonial .test-kira ,
-.testimonial .test-jeanette{
+.feedbacks .kira ,
+.feedbacks .jeanette{
     background-color: rgb(255, 255, 255);
 }
-.testimonial .test-kira{
+.feedbacks .kira{
     grid-column-start: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.testimonial .test-patrick{
+.feedbacks .patrick{
     background-color:  rgb(25, 33, 46);
     grid-column-start: 2;
     grid-column-end: 4;
